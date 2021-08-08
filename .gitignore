@@ -71,6 +71,7 @@ cover/
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-# jetBrain
+# chenbw
 venv
 .idea
+debug
