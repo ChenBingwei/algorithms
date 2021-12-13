@@ -75,3 +75,4 @@ cover/
 venv
 .idea
 debug
+*.DS_Store
