@@ -26,7 +26,6 @@ func maxSlidingWindowA(nums []int, k int) []int {
 			queue = queue[:len(queue)-1]
 		}
 		queue = append(queue, i)
-		fmt.Println(queue)
 
 		if i >= k-1 {
 			res = append(res, nums[queue[0]])
