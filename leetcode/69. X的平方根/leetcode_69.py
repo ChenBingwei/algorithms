@@ -1,8 +1,8 @@
 def mySqrt(x: int) -> int:
-    if x in [0, 1]:
-        return x
+    # if x in [0, 1]:
+    #     return x
 
-    low, high, res = 1, x, -1
+    low, high, res = 0, x, -1
     while low <= high:
         mid = (low + high) // 2
         if mid * mid <= x:
