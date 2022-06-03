@@ -46,11 +46,11 @@ class Solution_b:
 class Solution_c:
     def consecutiveNumbersSum(self, n: int) -> int:
         m = int(sqrt(2 * n))
-
-        res = 0
-
-        for k in range(1, m + 1):
-            if (n - k * (k - 1) // 2) % k == 0:
-                res += 1
-
-        return res
+        ans = 0
+        for i in range(1,m+1):
+            # (2x + k - 1)k = 2n
+            if (2*n) % i != 0:
+                continue
+            if ((2*n) / i - (i-1)) % 2 == 0:
+                ans += 1
+        return ans
